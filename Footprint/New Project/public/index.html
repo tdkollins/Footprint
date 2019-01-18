@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	    <link rel="stylesheet" type="text/css" href="../vendors/css/normalize.css">
+	    <link rel="stylesheet" type="text/css" href="../resources/style.css">
+		<link rel="stylesheet" type="text/css" href="../vendors/css/grid.css">
+		<link rel="stylesheet" type="text/css" href="../vendors/js/prefixfree.min.js">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400i" rel="stylesheet">
+		<script type="text/javascript" src="../public/scriptfootprint.js"></script>
+		<title>Footprint</title>
+	</head>
+
+	<body>
+		<header>
+			<div class="logo-text-box clearfix">
+				<img src="../resources/footprint.png" class="logo">
+				<a class="button" href="#login">Log In</a>
+				<a class="button" href="#sign-up">Sign Up</a>
+			</div>
+		</header>
+		<section class="section-form" id="login">
+			<div clas="row">
+				<h2>Log In</h2>
+			</div>
+			<div class="row">
+				<form method="post" action="../Footprint/index.html">
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label>&nbsp;</label>
+						</div>
+						<div class="col span-1-of-3">
+							<input type="email" name="email" id="email" placeholder="E-mail" required autocomplete="off">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label>&nbsp;</label>
+						</div>
+						<div class="col span-1-of-3">
+							<input type="password" name="password" id="password" placeholder="Password" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label>&nbsp;</label>
+						</div>
+						<div class="col span-1-of-3">
+							<input type="submit" value="Submit">
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+		<section class="section-form" id="sign-up">
+			<div clas="row">
+				<h2>Sign Up</h2>
+			</div>
+			<div class="row">
+				<form method="post" action="../Footprint/index.html">
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label>&nbsp;</label>
+						</div>
+						<div class="col span-1-of-3">
+							<input type="text" name="f-name" id="f-name" placeholder="First Name" required autocomplete="off">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label>&nbsp;</label>
+						</div>
+						<div class="col span-1-of-3">
+							<input type="text" name="l-name" id="l-name" placeholder="Last Name" required autocomplete="off">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label>&nbsp;</label>
+						</div>
+						<div class="col span-1-of-3">
+							<input type="email" name="email" id="email" placeholder="E-mail" required autocomplete="off">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label>&nbsp;</label>
+						</div>
+						<div class="col span-1-of-3">
+							<input type="tel" name="phone" id="phone" placeholder="Phone Number" required autocomplete="off">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label>&nbsp;</label>
+						</div>
+						<div class="col span-1-of-3">
+							<input type="password" name="password" id="password" placeholder="Password" onkeyup="check();" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label>&nbsp;</label>
+						</div>
+						<div class="col span-1-of-3">
+							<input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" onkeyup="check();" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label>&nbsp;</label>
+						</div>
+						<div class="col span-1-of-3">
+							<input type="submit" value="Submit" onclick="supervisor()">
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+		<footer>
+			<div class="row">
+				<p>
+					Copyright &copy; 2019 by Footprint. All rights reserved.
+				</p>
+			</div>
+		</footer>
+	</body>
+
+</html>

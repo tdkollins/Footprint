@@ -1,0 +1,221 @@
+/* ---------------------------------------
+  BASIC SETUP
+-----------------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, 
+body {
+	background-color: #FFF;
+	color: #313131;
+	font-family: "Roboto", sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+	content: ".";
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+/* BUTTONS ---------------------------------*/
+
+.button:link,
+.button:visited {
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: 300;
+	text-decoration: none;
+	border-radius: 200px;
+	border: 1px solid #3DBCCD;
+	margin-right: 15px;
+	color: #FFF;
+	transition: background-color 0.4s, border 0.4s, color 0.4s;
+}
+
+.button:hover,
+.button:active {
+	background-color: #3DBCCD;
+	border: 1px solid #3DBCCD;
+	color: #FFF;
+	font-weight: 300;
+}
+
+
+/* HEADINGS --------------------------------*/
+
+
+
+h1, h2 {
+	margin: 40px 0 20px 0;
+	text-align: center;
+	color: #3DBCCD;
+}
+
+h1 {
+	font-size: 400%;
+}
+
+h2 {
+	font-size: 200%;
+}
+
+
+/*-------------------------------------------
+   HEADER
+-------------------------------------------*/
+
+header {
+	background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.7)), url(../vendors/images/beach.jpg);
+	background-size: cover;
+	background-position: center;
+	height:100vh;
+	text-align: center;
+
+}
+
+.logo-text-box {
+	position: absolute;  
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.logo {
+	display: block;
+	margin:-20% 0 20px 0;
+}
+
+/*----------------------------------------------
+   FORMS
+----------------------------------------------*/
+
+
+.section-form {
+	width: 60%;
+	margin: auto;
+	margin-bottom: 50px;
+}
+
+input {
+	width: 100%;
+	padding: 7px;
+	border-radius: 3px;
+	border: 1px solid #3DBCCD;
+}
+
+input[type=submit] {
+	color: #FFF;
+	background-color: #3DBCCD;
+}
+
+*:focus {outline: none;}
+
+
+/*----------------------------------------
+   FOOTER
+-----------------------------------------*/
+
+
+footer {
+	background-color: #665137;
+	padding: 10px;
+	font-size: 80%;
+}
+
+footer p {
+	color: #DDC4A1;
+	text-align: center;
+	font-size: 70%;
+	margin-top: 20px;
+}
+
+/*------------------------------------------
+   TABLES
+------------------------------------------*/
+
+table {
+	border-collapse: collapse;
+	width: 80%;
+	table-layout: fixed;
+	color: #FFF;
+	position: absolute;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-weight: 300;
+}
+
+th, td {
+	padding: 10px;
+	border: 3px solid #10393f;
+	color: #FFF;
+
+}
+
+th {
+	background-color: #1e6b75;
+}
+
+tr:nth-child(odd) {background-color: #30a8b8;}
+tr:nth-child(even) {background-color: #81d3de}
+
+td {
+	vertical-align: middle;
+	text-align: center;
+}
+
+button {
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 0 0 20px 0;
+}
+
+.database input[type="text"] {
+	margin: 5px 0 5px 0;
+	margin-right: 20px;
+	font-weight: 100;
+}
+
+.add-data {
+	width: 90%;
+	position: relative;
+	right: -5%;
+}
+
+#clear-log,
+#show-log {
+	border-style: none;
+	border-radius: 4px;
+	color: #FFF;
+	width: 9%;
+}
+
+#show-log {
+	background-color: #4CB27B;
+	border: 1px solid #4CB27B;
+	margin-left: 41%;
+}
+
+#clear-log {
+	background-color: #D52939;
+	border: 1px solid #D52939;
+}
+
+.database {
+	background-image: url(../vendors/images/geissht.jpg);
+	height:100vh;
+}

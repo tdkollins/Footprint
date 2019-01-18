@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="UTF-8">
+	 <link rel="stylesheet" type="text/css" href="../vendors/css/normalize.css">
+   <link rel="stylesheet" type="text/css" href="../resources/style.css">
+	 <link rel="stylesheet" type="text/css" href="../vendors/css/grid.css">
+	 <link rel="stylesheet" type="text/css" href="../vendors/js/prefixfree.min.js">
+   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400i" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+    <script>
+    var config = {
+      apiKey: "AIzaSyBPrjKTTwdrkLprxEWHBwtcrInojk8b3SU",
+      authDomain: "trial-807c0.firebaseapp.com",
+      databaseURL: "https://trial-807c0.firebaseio.com",
+      projectId: "trial-807c0",
+      storageBucket: "trial-807c0.appspot.com",
+      messagingSenderId: "898768480386"
+    };
+
+    firebase.initializeApp(config);
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../public/scriptfootprint.js"></script>
+    <script>initialize()</script>
+</head>
+<body class="database">
+	<div class="add-data">
+	<h1>Footprint</h1>
+  <td>
+    <button id="show-log" onclick="genTable()">Show Log</button>
+    <button id="clear-log" onclick="clearLog()">Clear Log</button>
+  </td>
+    <div class="row">
+    <div class="col span-1-of-2">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" placeholder="Employee Name" autocomplete="off">
+    </div>
+    <div class="col span-1-of-2">
+      <label for="loc">Location:</label>
+      <input type="text" name="loc" id="loc" placeholder="Location" autocomplete="off">
+    </div>
+    </div>
+    <button onclick="addData()">Submit</button>
+    <br>
+    <div class="row">
+      <div class="col span-1-of-1">
+    <label for="reg">Register New Employee</label>
+    <input type="text" name="reg" id="reg" placeholder="Employee Name" autocomplete="off">
+      </div>
+    </div>
+    <button onclick="register()">Register</button>
+  </div>
+<br />
+<div id="parentHolder"></div>
+
+</html>

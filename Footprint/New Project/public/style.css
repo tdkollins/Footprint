@@ -1,0 +1,50 @@
+h2 {
+    color: purple;
+}
+
+.blue-text {
+    color: blue;
+}
+
+/* add "!important" to make colour high priority */
+
+#orange-tag {
+    color: orange;
+}
+
+/* try best to do class style "." instead of anything else */
+
+.absolute {
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+.fixed {
+    position: fixed;
+    top:50;
+    left:0;
+}
+
+/* Display types... */
+
+.block {
+    display:block;
+}
+
+.flex {
+    display: flex;
+}
+
+.none {
+    display: none;
+}
+
+/* mobile vs desktop */
+
+@media(min-width: 500px) {
+    .mobile-desktop {
+        background-color: white;
+        color: black;
+    }
+}
